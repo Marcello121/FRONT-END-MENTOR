@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    font-family: 'DM SANS', sans-serif;
+    font-size: 18px;
+    font-weight: 550;
+
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+
+div#container{
+    display: grid;
+    
+
+    grid-template-columns: 175px 350px 150px;
+    grid-template-rows: repeat(10, 50px);
+
+    gap: 20px;
+    place-content: center;
+
+    
+    padding: 50px;
+    border-radius: 10px;
+
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.61);
+
+    /* Depois trocar a cor do fundo pra branco, coloquei preto só pra enxergar melhor os itens */
+    background-color: rgba(0, 0, 0, 0.884);
+    margin: auto;
+    
+
+    
+}
+
+div.item{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+div#A{
+    
+    grid-row: 1 / 5;
+
+    background-color: #FAEEE2;
+    color: black;
+
+    
+    
+    
+}
+
+div#A > p{
+    font-size: 23px;
+    line-height: 1em;
+    text-align: left;
+    padding: 10px;
+}
+
+div#A > p > i{
+    color: purple;
+    font-size: 25px;
+}
+
+div#H{
+    grid-row: 5 / 10;
+    background-color: hsl(39, 100%, 71%);
+    
+    
+}
+
+div#H > p{
+    color: black;
+    text-align: start;
+    margin: 0px;
+    padding: 5px;
+
+    font-size: 25px;
+}
+
+div#H > p > img{
+
+}
+
+img{
+   max-width: 100%;
+   height: auto;
+   
+   display: block;
+   margin-top: 10px;
+   
+
+    
+}
+
+div#B{
+    grid-row: 1 / 4;
+
+    background-color: hsl(256, 67%, 59%);
+    
+}
+
+div.dupla{
+
+    grid-row: 4 / 7;
+    grid-column: 2;
+    
+    
+    display: flex;
+    gap: 20px;
+
+}
+
+div#C{
+    background-color: white;
+    color: black;
+    width: 50%;
+    
+
+    
+}
+
+div#D{
+    background-color: hsl(39, 100%, 71%);
+    color: black;
+    width: 50%;
+
+
+}
+
+div.dupla2{
+    display: flex;
+    gap: 20px;
+
+    grid-row: 7 / 10;
+    grid-column: 2 / 4;
+    
+}
+
+div#E{
+    width: 30%;
+    grid-row: 6 / 8;
+    background-color: white;
+    color: black;
+    
+}
+
+div#G{
+    width: 65%;
+
+    background-color: hsl(256, 67%, 59%);
+    
+    
+
+}
+
+div#F{
+    grid-row: 1 / 7;
+
+    background-color: hsl(254, 88%, 90%);
+    color: black;
+}
+
+div.at{
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+}
