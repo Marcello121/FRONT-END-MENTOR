@@ -34,6 +34,8 @@ div#container{
     /* Depois trocar a cor do fundo pra branco, coloquei preto só pra enxergar melhor os itens */
     background-color: rgba(0, 0, 0, 0.884);
     margin: auto;
+
+    height: 680px;
     
 
     
@@ -49,15 +51,10 @@ div.item{
 }
 
 div#A{
-    
     grid-row: 1 / 5;
 
     background-color: #FAEEE2;
     color: black;
-
-    
-    
-    
 }
 
 div#A > p{
@@ -75,8 +72,6 @@ div#A > p > i{
 div#H{
     grid-row: 5 / 10;
     background-color: hsl(39, 100%, 71%);
-    
-    
 }
 
 div#H > p{
@@ -85,12 +80,15 @@ div#H > p{
     margin: 0px;
     padding: 5px;
 
+    display: flex;
+    flex-direction: column;
+
     font-size: 25px;
 }
 
-div#H > p > img{
 
-}
+
+
 
 img{
    max-width: 100%;
@@ -99,14 +97,19 @@ img{
    display: block;
    margin-top: 10px;
    
-
-    
 }
 
 div#B{
     grid-row: 1 / 4;
 
     background-color: hsl(256, 67%, 59%);
+    
+}
+
+p > img.imgB{
+    height: 25px;
+    width: 150px;
+    margin: auto;
     
 }
 
@@ -122,20 +125,90 @@ div.dupla{
 }
 
 div#C{
-    background-color: white;
+    background-color: #FCFAFD;
     color: black;
-    width: 50%;
+    width: 160px;
+    overflow: hidden;
+    
+}
+
+div#C > p{
+    font-size: 17px;
+}
+
+p.imgDoC{
+    
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+    margin-top: -5px;
+    height: auto;
+    width: 201px;
+
+}
+
+p.imgDoC > img{
+    
     
 
+    height: 45px;
+    width: 200px;
+}
+
+
+
+div#C > p{
+    text-align: left;
+    padding: 5px;
+}
+
+p#teste{
     
+    height: 40px;
+    width: 150px;
+    
+
+    background-image: url(assets/images/illustration-multiple-platforms.webp);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+}
+
+img.imgC{
+    height: 40px;
+    width: 150px;
+    margin: auto;
+
 }
 
 div#D{
     background-color: hsl(39, 100%, 71%);
     color: black;
-    width: 50%;
+    width: 160px;
+
+    font-size: 19px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+    /* overflow: hidden; faz com que o conteúdo que esteja vazando suma, muito bom 👍 */ 
+    overflow: hidden;
 
 
+}
+
+
+
+p.backD > img{
+    height: auto;
+    display: block;
+    max-width: 100%;
+    
+    
+    
 }
 
 div.dupla2{
@@ -145,23 +218,59 @@ div.dupla2{
     grid-row: 7 / 10;
     grid-column: 2 / 4;
     
+    
+    
 }
 
+
 div#E{
-    width: 30%;
+    width: 160px;
     grid-row: 6 / 8;
     background-color: white;
     color: black;
+
+    font-size: 50px;
+
+    text-align: left;
     
+}
+
+img.imgE{
+    margin-top: 5px;
+    width: 115px;
+    height: 45px;
+    margin-left: 0px;
+    margin-right: 10.000px;
+}
+
+
+div#E > p{
+    font-size: 13px;
 }
 
 div#G{
     width: 65%;
 
     background-color: hsl(256, 67%, 59%);
+    display: flex;
     
     
 
+}
+
+div#G > p{
+    order: 1;
+    text-align: start;
+    background-color: red;
+    font-size: 20px;
+    
+    
+}
+
+img.imgG{
+    order: 0;
+    height: 153px;
+    
 }
 
 div#F{
@@ -169,10 +278,42 @@ div#F{
 
     background-color: hsl(254, 88%, 90%);
     color: black;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+div#F > p {
+    margin-left: 10px;
+}
+
+.imgDoF{
+    margin-top: -10px;
+    width: 224px;
+    height: 190px;
+}
+
+.imgDoF > img{
+    width: 214px;
+    height: 201px;
+}
+
+div#F > .p1{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: -3px;
+    text-align: left;
+}
+
+div#F > .p2{
+    font-size: 13px;
+    text-align: left;
 }
 
 div.at{
     padding: 15px;
     margin: auto;
     text-align: center;
+    font-size: 11px;
 }
